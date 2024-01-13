@@ -1,4 +1,4 @@
-import { calculateTotalPrice } from '../src/index';
+import { calculateTotalPrice } from './test';
 
 describe('calculateTotalPrice function', () => {
   test('calculates the total price correctly for a valid shopping cart', () => {

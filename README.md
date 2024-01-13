@@ -1,2 +1,26 @@
-# Ecommerce
+\# Ecommerce
+Welcome to the E-Commerce project! The main goal of this project is purely educational    
 
+## FrontEnd:
+### Node and npm version:
+    node: 18.19.0
+    npm: 10.2.5
+
+### How to install and run:
+```bash
+git clone https://github.com/WillianIsami/ts-ecommerce.git
+
+cd frontend
+
+npm install
+
+npm run build
+npm start
+```
+
+### To run all tests:
+```bash
+npm test
+```
+
+## Backend:
