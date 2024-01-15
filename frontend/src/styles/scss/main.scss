@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 3% 5%; /* top right bottom left */   
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+
+    .nav-bar-item {
+        color: #242323;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.22px;
+    }
+
+    button {
+        color: #FEFEFE;
+        width: 134px;
+        height: 38px;
+        flex-shrink: 0;
+        border-radius: 7px;
+        background: $secondary-color;
+    }
+}
+
+.fashion {
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+
+    img {
+        width: 20px;
+    }
+    p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 1.2px;
+    }
+}
+
+#main-content {
+    background-color: $tertiary-color;
+}
+
+#sponsor-section {
+    background-color: $main-color;
+}
+
+#payday {
+    background-color: $main-color;
+}
