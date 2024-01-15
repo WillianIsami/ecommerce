@@ -18,8 +18,11 @@ body {
     align-items: center;
     gap: 54px;
 
+    p {
+        color: $secondary-color;
+    }
+    
     .nav-bar-item {
-        color: #242323;
         font-family: Poppins;
         font-size: 16px;
         font-style: normal;
@@ -29,10 +32,10 @@ body {
     }
 
     button {
-        color: #FEFEFE;
-        width: 134px;
-        height: 38px;
+        width: 98px;
+        height: 46px;
         flex-shrink: 0;
+        color: $quaternary-color;
         border-radius: 7px;
         background: $secondary-color;
     }
@@ -50,7 +53,7 @@ body {
         width: 20px;
     }
     p {
-        color: #000;
+        color: $secondary-color;
         font-family: Poppins;
         font-size: 25px;
         font-style: normal;
@@ -61,13 +64,45 @@ body {
 }
 
 #main-content {
-    background-color: $tertiary-color;
+    background-color: $quinary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            width: 120px;
+            height: 48px;
+            flex-shrink: 0;
+            color: $quaternary-color;
+            border-radius: 10px;
+            background: $secondary-color;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -1.5px;
+        }
+    }
+
+    img {
+        width: 600px;
+        height: 513px;
+        flex-shrink: 0;
+    }
 }
 
 #sponsor-section {
-    background-color: $main-color;
+    background-color: $primary-color;
 }
 
 #payday {
-    background-color: $main-color;
+    background-color: $primary-color;
 }
