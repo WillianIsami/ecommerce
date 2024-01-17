@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 80rem;
+    max-width: 75rem;
     margin: auto;
     display:flex;
     justify-content: center;
@@ -43,16 +43,16 @@ body {
             line-height: normal;
             letter-spacing: 0.22px;
         }
-    
-        button {
-            width: 98px;
-            height: 46px;
-            flex-shrink: 0;
-            color: $quaternary-color;
-            border-radius: 7px;
-            background: $secondary-color;
-        }
     }
+}
+
+.custom-button {
+    width: 98px;
+    height: 46px;
+    flex-shrink: 0;
+    color: $quaternary-color;
+    border-radius: 7px;
+    background: $secondary-color;
 }
 
 
@@ -157,10 +157,7 @@ body {
         width: 100%;
         flex-shrink: 0;
         display:flex;
-        justify-content: space-evenly;
-        align-items: center;
-        display:flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
 
         .sponsor {
@@ -174,6 +171,116 @@ body {
     }
 }
 
+#arrivals {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 45rem;
+
+    h1 {
+        width: 100%;
+        color: #000;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 2.88px;
+    }
+
+    .models {
+        max-width: 390px; // 390
+        max-height: 464px; // 604
+        width: auto;
+        height: auto;
+    }
+}
+
+.arrival-collection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.arrival-item {
+    .models {
+        object-fit: contain;
+        background-size: cover;
+    }
+
+    .arrival-description {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        .arrow-icon {
+            width: 20px;
+        }
+
+        .description {
+            color: #191919;
+            font-family: Poppins;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 25px; /* 156.25% */
+            letter-spacing: -1.28px;
+
+            .explore-now {
+                color: #7F7F7F;
+                font-size: 18px;
+                line-height: 25px; /* 208.333% */
+                letter-spacing: -0.96px;
+            }
+        }
+    }
+}
+
+
 #payday {
     background-color: $primary-color;
+
+    img {
+        max-width: 626px;
+        max-height: 662px;
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+    }
+    
+    .payday-description {
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h1 {
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 75px;   
+        }
+        
+        .bold {
+            font-weight: 700;
+        }
+    }
+}
+
+#young-favourite {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 45rem;
+
+    h1 {
+        width: 100%;
+        color: #000;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 2.88px;
+    }
+
+    .models {
+        max-width: 582px; // 390
+        max-height: 400px; // 604
+        width: auto;
+        height: auto;
+    }
 }
