@@ -1,4 +1,4 @@
-\# Ecommerce
+# Ecommerce
 Welcome to the E-Commerce project! The main goal of this project is purely educational    
 
 ## FrontEnd:

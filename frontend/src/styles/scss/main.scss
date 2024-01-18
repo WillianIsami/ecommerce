@@ -47,14 +47,19 @@ body {
 }
 
 .custom-button {
-    width: 98px;
-    height: 46px;
+    width: 120px;
+    height: 48px;
     flex-shrink: 0;
     color: $quaternary-color;
-    border-radius: 7px;
+    border-radius: 10px;
     background: $secondary-color;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.5px;
 }
-
 
 .fashion {
     display:flex;
@@ -102,21 +107,6 @@ body {
             font-style: normal;
             font-weight: 900;
             line-height: 75px;
-        }
-
-        button {
-            width: 120px;
-            height: 48px;
-            flex-shrink: 0;
-            color: $quaternary-color;
-            border-radius: 10px;
-            background: $secondary-color;
-            font-family: Poppins;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: -1.5px;
         }
 
         #container-shop-now {
@@ -235,7 +225,7 @@ body {
 
 
 #payday {
-    background-color: $primary-color;
+    background-image: $gradient-background;
 
     img {
         max-width: 626px;
@@ -282,5 +272,51 @@ body {
         max-height: 400px; // 604
         width: auto;
         height: auto;
+    }
+}
+
+#join-community {
+    background: $gradient-background;
+
+    .subscribe-section {
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        flex-shrink: 0;
+        text-align: center;
+        gap: 10px;
+
+        font-style: normal;
+        color: $quaternary-color;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 55px; 
+            letter-spacing: 1.65px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 35px;
+            letter-spacing: 0.96px;
+        }
+
+        .subscribe {
+            background-color: $quaternary-color;
+            padding: 5px;
+    
+            input{
+                border:none;
+                outline:none;
+            }
+    
+            button {
+                width: 80px;
+                height: auto;
+                border-radius: 6px;
+            }
+        }
     }
 }
