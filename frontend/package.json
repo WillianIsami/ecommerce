@@ -5,7 +5,7 @@
   "scripts": {
     "start": "serve src/ -p 8080",
     "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.main.ts",
-    "build": "tsc",
+    "build": "CI=false && tsc",
     "test": "jest",
     "sass": "node-sass ./src/styles/scss/main.scss ./src/dist/css/main.css",
     "sass-watch": "node-sass --watch ./src/styles/scss/main.scss ./src/dist/css/main.css",

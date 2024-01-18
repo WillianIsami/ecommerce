@@ -10,7 +10,7 @@ Welcome to the E-Commerce project! The main goal of this project is purely educa
 ```bash
 git clone https://github.com/WillianIsami/ts-ecommerce.git
 
-cd frontend
+cd ts-ecommerce/frontend
 
 npm install
 
