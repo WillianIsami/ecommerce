@@ -1,6 +1,10 @@
 name: Continuous Integration 
 
-on: [pull_requests, push]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   continuos-integration:
@@ -11,7 +15,7 @@ jobs:
       - name: Nodejs
         uses: actions/setup-node@v2
         with: 
-          node-version: 18.x
+          node-version: 18.
       - name: run install, build and test
         run: |
           npm install

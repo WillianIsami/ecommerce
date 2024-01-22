@@ -25,3 +25,13 @@ npm test
 ```
 
 ## Backend:
+
+### Run server: 
+```bash
+git clone https://github.com/WillianIsami/ts-ecommerce.git
+
+cd ts-ecommerce/frontend
+
+npm install
+npm start
+```
