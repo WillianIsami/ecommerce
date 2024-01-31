@@ -26,9 +26,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd backend
-    - run: npm install
-    - run: tsc
+    - name: run install and build
+      run: |
+        cd backend
+        npm install
+        tsc
 
   build-frontend:
 
@@ -46,9 +48,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd frontend
-    - run: npm install
-    - run: npm run build
-    - run: npm run sass
-    - run: npm test
-
+    - name: run install and build
+      run: |
+        cd frontend
+        npm install
+        npm run build
+        npm run sass
+        npm test
