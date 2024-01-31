@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - rest-api
+      - main
+  pull_request:
+    branches:
+      - rest-api
+      - main
+
+jobs:
+  build-backend:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+    - name: run install and build
+      run: |
+        cd backend
+        npm install
+        tsc
+  
+  build-frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: run install, build and test
+        run: |
+          cd frontend
+          npm install
+          npm run build
+          npm run test
