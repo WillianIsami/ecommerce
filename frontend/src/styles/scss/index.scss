@@ -47,6 +47,9 @@ body {
 }
 
 .custom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
     height: 48px;
     flex-shrink: 0;
@@ -60,6 +63,7 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: -1.5px;
+    text-decoration: none;
 }
 
 .fashion {

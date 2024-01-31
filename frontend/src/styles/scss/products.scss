@@ -1,0 +1,16 @@
+#img-container {
+    overflow: hidden;    
+}
+
+.img-products {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.container {
+    max-width: 75rem;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

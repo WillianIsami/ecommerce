@@ -15,7 +15,6 @@ cd ts-ecommerce/frontend
 npm install
 
 npm run build
-npm run sass
 npm start
 ```
 
